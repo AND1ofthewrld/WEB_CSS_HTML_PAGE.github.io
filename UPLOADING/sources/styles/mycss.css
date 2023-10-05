@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+body {
+    font-family: Michroma, serif;
+    background: radial-gradient(#878d8b 0%, #2a2b2a 100%);
+}
+p{
+    color: white;
+}
+.nav-link {
+    color: rgb(247, 247, 247);
+}
+.navbar-nav .nav-link.active {
+    color: rgb(129, 121, 121);
+    
+}
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler {
+    background-color: rgb(210, 210, 210);
+}
+.card {
+    box-shadow: 5px 9px 24px 0px #212323;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    background-color: rgb(30, 31, 30);
+
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+
+}
+.sidebar {
+    color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 0.1px;
+}
+.sidebar>p>a {
+    text-decoration: none;
+}
+.card {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.slidetext,
+.footer-text {
+    color: white;
+    margin: auto auto;
+    
+    
+}
+footer {
+    border-top: solid;
+    border-width: 0.1em;
+    border-color: white;
+}
+@media(max-width:755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+.media-links {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.nav-links-media {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav .nav-iteml>a{
+    border-bottom: solid;
+    border-width: 0.1px;
+}
+.imgphone {
+    filter: grayscale(50);
+    animation: myAnim2 2s ease 0s infinite normal forwards;
+}
+@keyframes myAnim2 {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
